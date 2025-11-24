@@ -1,0 +1,16 @@
+{
+  "name": "webdriverio-pom-framework",
+  "version": "1.0.0",
+  "description": "WebdriverIO Automation Framework using Page Object Model",
+  "scripts": {
+    "test": "wdio run wdio.conf.js"
+  },
+  "dependencies": {
+    "@wdio/cli": "^8.32.0",
+    "@wdio/local-runner": "^8.32.0",
+    "@wdio/mocha-framework": "^8.32.0",
+    "@wdio/spec-reporter": "^8.32.0",
+    "chromedriver": "^123.0.1",
+    "dotenv": "^16.4.5"
+  }
+}
