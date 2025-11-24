@@ -1,5 +1,0 @@
-{
-  "name": "webdriverio-pom-framework",
-  "version": "1.0.0",
-  "scripts": { "test": "wdio run wdio.conf.js" }
-}
