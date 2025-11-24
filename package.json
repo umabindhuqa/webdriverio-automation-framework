@@ -2,7 +2,9 @@
   "name": "webdriverio-pom-framework",
   "version": "1.0.0",
   "scripts": {
-    "test": "wdio wdio.conf.js"
+    "test": "wdio wdio.conf.js",
+    "allure:report": "allure generate allure-results --clean && allure open"
+
   },
   "dependencies": {
     "@wdio/cli": "^8.36.0",
