@@ -62,10 +62,18 @@ exports.config = {
     /**
      * Take screenshot automatically on failure
      */
-    afterTest: async function (test, context, { error }) {
-        if (error) {
-            await browser.saveScreenshot(`./errorShots/${test.title}.png`);
-        }
-    },
+ afterTest: async function (test, context, { error, result }) {
+    if (error) {
+        
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const testName = test.title.replace(/\s+/g, '_');
+
+        const filepath = `./errorShots/${timestamp}_${testName}.png`;
+
+        await browser.saveScreenshot(filepath);
+
+        console.log(`📸 Screenshot saved: ${filepath}`);
+    }
+},
 
 };
