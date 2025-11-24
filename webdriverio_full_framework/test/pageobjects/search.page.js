@@ -1,0 +1,1 @@
+class SearchPage{}; module.exports=new SearchPage();
