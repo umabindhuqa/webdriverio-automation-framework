@@ -74,9 +74,6 @@ Error message handling
 
 Navigation and interactions
 
-📸 Screenshots (Optional)
-
-👉 You can add screenshots of reports or test runs here later.
 
 🙋‍♀️ Author
 
